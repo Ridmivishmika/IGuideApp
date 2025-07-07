@@ -1,95 +1,85 @@
+// "use client";
+
+// import Footer from "@/components/footer";
+// import styles from "./page.module.css";
+// import Image from "next/image";
+// import LawImage from "@/public/law.jpg"; // Replace with your uploaded image path
+
+// export default function Home() {
+//   return (
+//     <div>
+//     <div className={styles.container}>
+//       <div className={styles.hero}>
+//         <div className={styles.heroText}>
+//           <h2 className={styles.heading}>
+//             Welcome to <span>iGuide</span>
+//           </h2>
+//           <p className={styles.paragraph}>
+//             The Academic Wing of the Independent Law Student Movement.
+//             <br /><br />
+//             iGuide serves as a dedicated platform for legal learning and academic excellence.
+//             Designed with the modern law student in mind, it offers structured resources including
+//             curated notes, past paper analysis, examination strategies, and seminars led by
+//             distinguished legal professionals.
+//             <br /><br />
+//             Our aim is not only to support academic success but to nurture the next generation
+//             of advocates, scholars, and leaders in law.
+//           </p>
+//         </div>
+//         <div className={styles.heroImage}>
+//           <Image src={LawImage} alt="Law Books and Gavel" className={styles.image} />
+//         </div>
+//       </div>
+//     </div>
+//     <Footer />
+
+//     </div>
+//   );
+// }
+
+"use client";
+
+import Footer from "@/components/footer";
 import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <div className={styles.container}>
+      <section className={styles.hero}>
+        <div className={styles.textSection}>
+          <h1 className={styles.heading}>
+            Welcome to <span className={styles.highlight}>iGuide</span>
+          </h1>
+          <p className={styles.paragraph}>
+            The Academic Wing of the Independent Law Student Movement
+          </p>
+          <p className={styles.description}>
+            iGuide serves as a dedicated platform for legal learning and
+            academic excellence. Designed with the modern law student in mind,
+            it offers structured resources including curated notes, past paper
+            analysis, examination strategies, and seminars led by distinguished
+            legal professionals.
+          </p>
+          <p className={styles.description}>
+            Our aim is not only to support academic success but to nurture the
+            next generation of advocates, scholars, and leaders in law.
+          </p>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+
+        <div className={styles.imageSection}>
           <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+            src="/home.jpg" // Make sure this image is in your `public` folder
+            alt="Students learning"
+            width={600}
+            height={400}
+            className={styles.heroImage}
+            priority
           />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+        </div>
+      </section>
+
+      <Footer />
     </div>
   );
 }

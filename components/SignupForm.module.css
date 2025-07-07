@@ -1,0 +1,98 @@
+/* SignupForm.module.css or global CSS */
+
+.signup-page-container {
+  padding: 1rem;
+  background: #91548d;
+  min-height: 100vh;
+}
+
+.signup-page-container h2 {
+  text-align: center;
+  color: #640259;
+  margin-top: 2rem;
+}
+
+.signup-form-section {
+  max-width: 450px;
+  margin: 2rem auto;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form-section label {
+  font-weight: bold;
+  color: #640259;
+  margin-top: 1rem;
+}
+
+.signup-form-section input[type="text"],
+.signup-form-section input[type="password"],
+.signup-form-section input[type="email"],
+.signup-form-section input[type="number"],
+.signup-form-section select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.signup-form-section button[type="submit"] {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #640259;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form-section button[type="submit"]:hover {
+  background-color: #4a0143;
+}
+
+.signup-form-section p {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  text-align: center;
+  color: #640259;
+}
+
+.signup-form-section a {
+  color: #640259;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.signup-form-section a:hover {
+  color: #c43ec3;
+  text-decoration: underline;
+}
+
+.signup-error-message {
+  color: #d00000;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.signup-success-message {
+  color: #1ba94c;
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
